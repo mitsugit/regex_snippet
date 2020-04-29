@@ -1,0 +1,23 @@
+目的　<～>　だけ抽出したい。
+
+<title> hello world </title>が丸ごと抽出される。
+これを、lazy quantifierに変える。
+
+対象テキスト
+
+<title> hello world </title>
+
+
+（変更前）
+正規表現
+<.+>
+→　<title> hello world </title>
+
+<.+?>     
+→　<title> , </title>
+
+
+
+
+
+
