@@ -1,6 +1,6 @@
-目的　<～>　だけ抽出したい。
+ある文字とある文字に囲まれている部分だけ抽出したい。
 
-対象テキスト
+対象テキスト➀
 
 <title> hello world </title>
 
@@ -25,6 +25,21 @@ echo "My first PHP"
 echo "My first PHP"
 ?>
 
+対象テキスト➁
 
+"text" or "picture". which is the best.
+"I think it is good for you
+ to be here"
 
+正規表現１　greedy
+\".+\"
+→　"text" or "picture"
+正規表現２ lazy
+\".+?\"
+→"text" ,  "picture"
+正規表現３ 複数行対応
+\"[^\"]+\"
+→　"text" ,  "picture",
+"I think it is good for you
+ to be here"
 
