@@ -1,22 +1,29 @@
 目的　<～>　だけ抽出したい。
 
-<title> hello world </title>が丸ごと抽出される。
-これを、lazy quantifierに変える。
-
 対象テキスト
 
 <title> hello world </title>
 
+<?php
+echo "My first PHP"
+?>
+
 
 （変更前）
-正規表現
+正規表現１　greedy
 <.+>
 →　<title> hello world </title>
 
+正規表現２　lazy
 <.+?>     
 →　<title> , </title>
 
-
+正規表現３　複数行対応
+<[^>]+>
+→　<title> , </title>
+　<?php
+echo "My first PHP"
+?>
 
 
 
