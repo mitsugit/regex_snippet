@@ -1,7 +1,12 @@
-#  wordだけを抜き出したい。前と後ろに何かしらの文字が入っている単語は無視したい。
-
 # 対象
 word words bigword  word keywords wording 
 
-# \bword\b
+#  wordだけを抜き出したい。前と後ろに何かしらの文字が入っている単語は無視したい。
 
+正規表現
+\bword\b
+
+# 逆に、wordが間に入ってる文字だけを抜き出したい時。
+
+正規表現
+\Bword\B
